@@ -361,7 +361,7 @@ h1 {
 }
 
 .location {
-    margin-top: 20px;
+    margin-top: 16px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -746,6 +746,7 @@ h1 {
     margin:0 auto;
 }
 
+
 label {
     color:#a27446;
     font-size: 1.8em;
@@ -765,7 +766,7 @@ input[type=text] {
 
 input[type=submit] {
     width: 30%;
-    margin-left: 30%;
+    margin-left: 34%;
     font-weight: bolder;
     background-color: white;
     color: #8d3d5b;
