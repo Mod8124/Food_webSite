@@ -15,7 +15,6 @@
     margin:0 auto;
     display:flex;
     flex-wrap: wrap;
-    text-align: center;
 }
 
 .navSecond {
@@ -26,9 +25,14 @@
     flex: 15%;
 }
 
-.logo img {
-    padding-top:40px ;
-    width:70%;
+.imglogo {
+    padding-top: 30px;
+    width: 70%;
+    margin:0 auto;
+}
+
+.imglogo img {
+    width: 100%;
 }
 
 .main__img {
@@ -288,7 +292,7 @@
 
 .red {
     padding-top: 80px;
-    margin-left:360px ;
+    margin-left: 60%;
     width:40%;
 }
 
@@ -301,39 +305,36 @@
 }
 
 .main__text {
-    margin-top:100px ;
-    margin-left: 70px;
     width:80%;
+    margin:0 auto;
 }
 
 h1 {
     width:100%;
     font-size:6em;
     color:#a27446; 
-    text-align: start;
     padding-bottom:30px ;
+    padding-top: 70px;
 }
 
 .main__text p {
-    text-align:start;
     font-size:2.6em ;
     padding-bottom:50px ;
 }
 
 .main__text button {
-    margin-left:-510px ;
     color:#8d3d5b;
     font-size:1.7em ;
     border: none;
     padding:8px;
     background-color:white ;
-    border-top: 4px solid #a27446;
-    border-bottom: 4px solid  #a27446;
+    border-top: 5px solid #a27446;
+    border-bottom: 5px solid  #a27446;
 }
 
 .main__text button:hover{
-    border-bottom: 4px solid  #8d3d5b;
-    border-top: 4px solid #8d3d5b;
+    border-bottom: 5px solid  #8d3d5b;
+    border-top: 5px solid #8d3d5b;
 }
 
 /*-------------start second contain------------*/
@@ -343,7 +344,6 @@ h1 {
     margin:0 auto;
     display:flex;
     flex-wrap: wrap;
-    text-align: center;
 }
 
 .log {
@@ -354,6 +354,46 @@ h1 {
     flex:44%;
 }
 
+#second_img {
+    width: 70%;
+    margin:0 auto;
+    padding-top: 100px;
+}
+
+.location {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.locationSvg {
+    flex:30%;
+    text-align: center;
+}
+
+.locationTexto {
+    flex:70%;
+}
+
+.locationTexto p {
+    font-size: 1.4em;
+    width: 70%;
+    line-height: 34px;
+}
+
+.locationTexto span {
+    color:#a27446;
+}
+
+.locationSvg svg {
+    width: 70px;
+    height: 70px;
+    fill:#8d3d5b;
+    stroke: #8d3d5b;
+}
+
+
 .second__text {
     flex:41%;
 }
@@ -361,38 +401,9 @@ h1 {
 .second__text img {
     width:100%;
     margin-top:-80px ;
-    margin-left: -80px;
+    margin-left: -50px;
 }
 
-.location {
-    margin-top:130px ;
-    margin-left: 110px;
-    margin-bottom: 60px;
-    width:60%;
-    overflow: hidden;
-}
-
-.location span, .clock span {
-    color:#a27446;
-}
-
-.location p, .clock p {
-    text-align: start;
-    margin-left:180px ;
-    margin-top: -80px;
-    width:65%;
-    font-size: 180%;
-}
-
-.location svg, .clock svg {
-    margin-left:-275px ;
-}
-
-.clock {
-    width:60%;
-    overflow: hidden;
-    margin-left: 110px;
-}
 
 /*-----start third contain------*/
 
@@ -427,7 +438,7 @@ h1 {
 }
 
 .cake, .dona, .drive {
-    flex: auto;
+    flex:auto;
 }
 
 .cake, .dona, .drive {
@@ -444,7 +455,7 @@ h1 {
      font-size:1.6em ;
      margin: 0 auto;
      color:#494646;
-     text-align:start;
+     text-align:center;
 }
 
 .cake h3, .dona h3 {
@@ -491,8 +502,8 @@ h1 {
 }
 
 .about p {
-    padding-left: 70px;
-    width:600px;
+    margin:0 auto;
+    width: 80%;
     font-size: 2.3em;
 }
 
@@ -522,8 +533,10 @@ h1 {
 }
 
 .chef h2 {
-    margin-top: 90px;
+    padding-top: 50px;
     font-size: 6em;
+    width: 100%;
+    margin:0 auto;
     color:#8d3d5b;
     padding-left: 230px;
     padding-bottom: 20px;
@@ -531,8 +544,8 @@ h1 {
 
 .chef p {
     margin:0 auto;
-    width:600px;
-    font-size: 2.3em; 
+    width: 70%;
+    font-size: 2.3em;
 }
 
 /*---inicia sixth contain------------*/
@@ -733,7 +746,6 @@ h1 {
     margin:0 auto;
 }
 
-
 label {
     color:#a27446;
     font-size: 1.8em;
@@ -752,7 +764,8 @@ input[type=text] {
 }
 
 input[type=submit] {
-    margin-left: 35%;
+    width: 30%;
+    margin-left: 30%;
     font-weight: bolder;
     background-color: white;
     color: #8d3d5b;
