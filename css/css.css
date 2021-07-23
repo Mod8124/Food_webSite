@@ -93,7 +93,7 @@
 }
 
 #navBar {
-    flex: 70%;
+    flex: 80%;
     overflow: hidden;
 }
 
@@ -127,6 +127,7 @@
 	top:0px; right: 0px;
 	bottom: 0; left: 0;
 	overflow: hidden;
+    z-index: 100;
 }
 /*style nav*/
 .main-nav {
@@ -266,7 +267,7 @@
 /*termina burger menu*/
 
 #redSocial {
-    flex: 20%;
+    flex: 10%;
     overflow: hidden;
 }
 
@@ -274,15 +275,15 @@
     margin-bottom:10px ;
     stroke:#fff;
     fill:transparent;
-    width:60px;
-    height:60px;
+    width:50px;
+    height:50px;
     background-color: #a27446;
 }
 
 #redSocial >.instagram {
     padding-top:5px ;
-    width:80px;
-    height: 80px;
+    width:70px;
+    height: 70px;
 }
 
 .main__cta {
@@ -480,7 +481,6 @@ h1 {
 
 .ice__img { 
    flex:44%;
-
    overflow: hidden;
 }
 
@@ -505,6 +505,7 @@ h1 {
     margin:0 auto;
     width: 80%;
     font-size: 2.3em;
+    color:#494646;
 }
 
 /*----inicia fith contain------*/
@@ -535,10 +536,10 @@ h1 {
 .chef h2 {
     padding-top: 50px;
     font-size: 6em;
-    width: 100%;
+    width: 80%;
     margin:0 auto;
     color:#8d3d5b;
-    padding-left: 230px;
+    text-align: center;
     padding-bottom: 20px;
 }
 
@@ -546,6 +547,7 @@ h1 {
     margin:0 auto;
     width: 70%;
     font-size: 2.3em;
+    color:#494646;
 }
 
 /*---inicia sixth contain------------*/
@@ -585,49 +587,44 @@ h1 {
     padding-top: 20px;
 }
 
+#menu {
+    width: 70%;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .dessert {
-    margin: 0 auto;
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-
-.dessert p {
-   color:#fff;
-   font-size: 2em;
-   margin-left: 340px;
-   margin-top:-20px ;
-   position: relative;
-   top:-50px; 
-   font-weight: bolder;
+.dessert_svg {
+    flex:20%;
+    text-align: center;
 }
 
-.dessert svg {
-    margin-left:210px;
-    width:80px;
-    height:80px;
+.dessert_svg svg {
+    width: 80px;
+    height: 80px;
     fill:#fff;
 }
 
-.sixth__contain button {
-    margin-top:30px ;
-    margin-left:36% ;
-    color:#8d3d5b;
+.dessert_text {
+    flex:80%;
+}
+
+.dessert_text p {
+    width: 90%;
+    margin:0 auto;
+    color:#fff;
     font-size: 2em;
-    padding:17px 35px 17px 35px;
-    border:5px solid #a27446;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
-.sixth__contain button:hover {
-    color:#a27446;
-}
-
-.img__menu {
-    flex: 50%;
-    padding-bottom: 110px;
-    overflow: hidden;
-}
-
-.dot {
+ .dot {
     cursor: pointer;
     transition: background-color 0.6s ease;
 }
@@ -651,18 +648,37 @@ h1 {
     to {opacity: 1}
   }
   
+ 
+.sixth__contain button {
+    margin-top:60px ;
+    margin-left:30% ;
+    color:#8d3d5b;
+    font-size: 2em;
+    padding:17px 35px 17px 35px;
+    border:5px solid #a27446;
+    font-weight: bold;
+}
+
+.sixth__contain button:hover {
+    color:#a27446;
+}
+
+.img__menu {
+    flex: 50%;
+    padding-bottom: 110px;
+    overflow: hidden;
+}
+
 
 .img_dessert {
-   width:800px;
-   margin:0 auto;
-   display: none;
+    width: 96%;
+    margin:0 auto;
+    display: none;
 }
 
 .img__menu img {
     width:100%;
 }
-
-
 
 
 /*---inicia seventh contain---*/
@@ -702,34 +718,49 @@ h1 {
 }
 
 .infoTwo {
-    width:420px;
+    width:80%;
     position: relative;
     top:50px;
-    left:130px;
+    left:70px;
 }
 
-.infoTwo span {
-    font-weight: bolder;
+#infoTwo {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.infoTwo p {
+.info_food {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info_foodSvg {
+    flex:20%;
+    text-align: center;
+}
+
+.info_foodSvg svg {
+    width: 70px;
+    height: 70px;
+    fill:#fff;
+}
+
+.info_foodSvg svg path {
+    stroke: #fff;
+}
+
+.info_foodTexto {
+    flex:80%;
+}
+
+.info_foodTexto p {
     color:#fff;
-    font-size: 1.5em;
-    width:300px;
-    margin-left: 120px;
-    margin-top: -70px;
-    position: relative;
-    top:-15px;
-    font-weight: bold;
-}
-
-.infoTwo svg {
-  fill:#fff;
-}
-
-.shedule svg {
-    width:100px;
-    height: 100px;
+    font-size: 1.3em;
+    width: 90%;
+    font-weight: 600;
 }
 
 .formulary h2 {
@@ -773,6 +804,7 @@ input[type=submit] {
     font-size:1.8em ;
     padding:15px 45px 15px 45px;
     border: 4px solid #a27446; 
+    text-align: center;
 }
 
 input[type=submit]:hover {
@@ -858,4 +890,2806 @@ footer {
     text-align: center;
     color:white;
 }
+
+@media only screen and (min-width: 1600px) and (max-width:1639px) {
+   .navFirst {
+       top:-700px;
+   }
+
+   .main__img {
+       height: 810px;
+   }
+
+   h1 {
+       font-size: 5em;
+   }
+
+   .main__text p {
+       font-size: 2.1em;
+   }
+
+   /*forth contain-*/
+
+   .about h2 {
+       margin-top: 0px;
+       width: 80%;
+       margin:0 auto;
+       padding-left: 0px;
+       padding-top: 30px;
+   }
+
+   .about p {
+       font-size: 2.1em;
+       color:#494646;
+   }
+
+   /*--fith contain--*/
+   
+   .chef p {
+       font-size: 2.1em;
+   }
+}
+
+@media only screen and (min-width: 1500px) and (max-width:1599px) {
+    .navFirst {
+        top:-660px;
+    }
+ 
+    .main__img {
+        height: 750px;
+    }
+ 
+    h1 {
+        padding-top: 20px;
+        font-size: 4.8em;
+    }
+ 
+    .main__text p {
+        font-size: 2.1em;
+    }
+
+    /*----second contain---*/
+
+    #second_img {
+        padding-top: 70px;
+    }
+
+    .locationTexto p {
+        width: 86%;
+    }
+ 
+    /*forth contain-*/
+ 
+    .about h2 {
+        margin-top: 0px;
+        width: 80%;
+        font-size: 5em;
+        margin:0 auto;
+        padding-left: 0px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+ 
+    .about p {
+        font-size: 2em;
+        color:#494646;
+    }
+ 
+    /*--fith contain--*/
+
+    .chef h2 {
+        font-size: 5em;
+    }
+    
+    .chef p {
+        font-size: 2em;
+    }
+
+    /*---sixth contain----*/
+    #menu {
+        width: 80%;
+    }
+
+    .dessert_text p {
+        width: 100%;
+    }
+  
+    .img_dessert {
+        padding-top: 60px;
+        width: 94%;
+        margin:0 auto;
+        display: none;
+    }
+
+    .sixth__contain button {
+        margin-left: 24%;
+    }
+
+    /*formulary ---*/
+
+    input[type=submit] {
+        width: 40%;
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width:1499px) {
+    .red {
+        padding-top: 40px;
+    }
+
+    .navFirst {
+        top:-630px;
+    }
+ 
+    .main__img {
+        height: 750px;
+    }
+ 
+    h1 {
+        padding-top: 10px;
+        font-size: 4.3em;
+    }
+ 
+    .main__text p {
+        font-size: 2em;
+    }
+
+    /*----second contain---*/
+
+    #second_img {
+        padding-top: 30px;
+    }
+
+    .locationTexto p {
+        width: 86%;
+    }
+ 
+    /*forth contain-*/
+ 
+    .about h2 {
+        margin-top: 0px;
+        width: 80%;
+        font-size: 5em;
+        margin:0 auto;
+        padding-left: 0px;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+ 
+    .about p {
+        font-size: 1.9em;
+        color:#494646;
+    }
+ 
+    /*--fith contain--*/
+
+    .chef h2 {
+        font-size: 5em;
+    }
+    
+    .chef p {
+        font-size: 1.9em;
+    }
+
+    /*---sixth contain----*/
+    #menu {
+        width: 90%;
+    }
+
+    .dessert_text p {
+        width: 100%;
+    }
+  
+    .img_dessert {
+        padding-top: 60px;
+        width: 94%;
+        margin:0 auto;
+        display: none;
+    }
+
+    .sixth__contain button {
+        margin-left: 24%;
+    }
+
+    /*formulary ---*/
+
+    input[type=submit] {
+        width: 40%;
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (min-width: 1300px) and (max-width:1399px) {
+
+    .navFirst a {
+        font-size: 1.6em;
+    }
+
+    .red {
+        padding-top: 40px;
+    }
+
+    .navFirst {
+        top:-590px;
+    }
+
+    .main__text {
+        width: 90%;
+    }
+ 
+    .main__img {
+        height: 660px;
+    }
+ 
+    h1 {
+        padding-top: 10px;
+        font-size: 4.3em;
+    }
+ 
+    .main__text p {
+        font-size: 2em;
+    }
+
+    /*----second contain---*/
+
+    #second_img {
+        padding-top: 30px;
+    }
+
+    .locationTexto p {
+        width: 86%;
+    }
+ 
+    /*forth contain-*/
+ 
+    .about h2 {
+        margin-top: 0px;
+        width: 86%;
+        font-size: 5em;
+        margin:0 auto;
+        padding-left: 0px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+ 
+    .about p {
+        font-size: 1.7em;
+        color:#494646;
+    }
+ 
+    /*--fith contain--*/
+
+    .chef h2 {
+        font-size: 5em;
+        padding-bottom: 10px;
+    }
+    
+    .chef p {
+        font-size: 1.7em;
+    }
+
+    /*---sixth contain----*/
+    #menu {
+        width: 96%;
+    }
+
+    .dessert_text p {
+        width: 100%;
+    }
+  
+    .img_dessert {
+        padding-top: 60px;
+        width: 94%;
+        margin:0 auto;
+        display: none;
+    }
+
+    .sixth__contain button {
+        margin-left: 24%;
+    }
+
+    /*formulary ---*/
+
+    input[type=submit] {
+        width: 40%;
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width:1299px) {
+
+    .navFirst a {
+        font-size: 1.4em;
+    }
+
+    .red {
+        width: 60%;
+        margin-left: 50%;
+        padding-top: 40px;
+    }
+
+    .navFirst {
+        top:-530px;
+    }
+
+    .main__text {
+        width: 90%;
+    }
+ 
+    .main__img {
+        height: 660px;
+    }
+ 
+    h1 {
+        padding-top: 10px;
+        font-size: 4.3em;
+    }
+ 
+    .main__text p {
+        font-size: 1.9em;
+        padding-bottom: 30px;
+    }
+
+    .main__text button {
+        font-size: 1.5em;
+    }
+
+    /*----second contain---*/
+
+    #second_img {
+        padding-top: 20px;
+    }
+
+    .locationTexto p {
+        width: 86%;
+        font-size: 1.3em;
+    }
+
+    /*---third contain ---**/
+
+    .cake p, .dona p, .drive p { 
+        width:410px;
+        font-size:1.4em ;
+        margin: 0 auto;
+        color:#494646;
+        text-align:center;
+   }
+
+    /*forth contain-*/
+ 
+    .about h2 {
+        margin-top: 0px;
+        width: 90%;
+        font-size: 4.6em;
+        margin:0 auto;
+        padding-left: 0px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+ 
+    .about p {
+        font-size: 1.6em;
+        color:#494646;
+    }
+ 
+    /*--fith contain--*/
+
+    .chef h2 {
+        font-size: 4.6em;
+        padding-bottom: 10px;
+    }
+    
+    .chef p {
+        font-size: 1.6em;
+    }
+
+    /*---sixth contain----*/
+    .title h2 {
+        font-size: 5em;
+    }
+
+    #menu {
+        width: 96%;
+    }
+
+    .dessert_text p {
+        width: 100%;
+        font-size: 1.6em;
+    }
+  
+    .img_dessert {
+        padding-top: 60px;
+        width: 94%;
+        margin:0 auto;
+        display: none;
+    }
+
+    .sixth__contain button {
+        margin-left: 20%;
+        margin-top: 40px;
+        font-size: 1.7em;
+    }
+
+    /*formulary ---*/
+
+    input[type=submit] {
+        width: 40%;
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width:1199px) {
+    #navBar {
+        flex:70%;
+    }
+
+    #navBar nav {
+        align-items: center;
+    }
+
+    #navBar a {
+        font-size:1.4em;
+    }
+
+    #redSocial {
+        flex:20%;
+    }
+
+    .navFirst a {
+        font-size: 1.4em;
+    }
+
+    .red {
+        width: 60%;
+        margin-left: 50%;
+        padding-top: 40px;
+    }
+
+    .navFirst {
+        top:-500px;
+    }
+
+    .main__text {
+        width: 90%;
+    }
+ 
+    .main__img {
+        height: 600px;
+    }
+ 
+    h1 {
+        padding-top: 0px;
+        font-size: 3.9em;
+        padding-bottom: 20px;
+    }
+ 
+    .main__text p {
+        font-size: 1.7em;
+        padding-bottom: 30px;
+    }
+
+    .main__text button {
+        font-size: 1.5em;
+    }
+
+    /*----second contain---*/
+
+    #second_img {
+        width: 80%;
+        padding-top: 10px;
+    }
+
+    .locationTexto p {
+        width: 86%;
+        font-size: 1.3em;
+    }
+
+    /*---third contain ---**/
+
+    .cake p, .dona p, .drive p { 
+        width:410px;
+        font-size:1.3em ;
+        margin: 0 auto;
+        color:#494646;
+        text-align:center;
+   }
+
+    /*forth contain-*/
+ 
+    .about h2 {
+        margin-top: 0px;
+        width: 90%;
+        font-size: 4.6em;
+        margin:0 auto;
+        padding-left: 0px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+ 
+    .about p {
+        font-size: 1.4em;
+        color:#494646;
+    }
+ 
+    /*--fith contain--*/
+
+    .chef h2 {
+        font-size: 4.6em;
+        padding-bottom: 10px;
+    }
+    
+    .chef p {
+        font-size: 1.4em;
+    }
+
+    /*---sixth contain----*/
+    .title h2 {
+        font-size: 5em;
+    }
+
+    #menu {
+        width: 96%;
+    }
+
+    .dessert_text p {
+        width: 100%;
+        font-size: 1.6em;
+    }
+  
+    .img_dessert {
+        padding-top: 60px;
+        width: 94%;
+        margin:0 auto;
+        display: none;
+    }
+
+    .sixth__contain button {
+        margin-left: 20%;
+        margin-top: 40px;
+        font-size: 1.7em;
+    }
+
+    /*---seventh contain ---*/
+
+    .info h2 {
+        font-size: 5em;
+    }
+
+    .formulary h2 {
+        padding-top: 220px;
+        font-size: 5em;
+    }
+
+    input[type=submit] {
+        width: 40%;
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width:1099px) {
+    #navBar {
+        flex:70%;
+    }
+
+    #navBar nav {
+        align-items: center;
+    }
+
+    #navBar a {
+        font-size:1.2em;
+    }
+
+    #redSocial {
+        flex:20%;
+    }
+
+    .navFirst a {
+        font-size: 1.4em;
+    }
+
+    .imglogo {
+        padding-top: 20px;
+        width: 80%;
+    }
+
+    .red {
+        width: 60%;
+        margin-left: 46%;
+        padding-top: 10px;
+    }
+
+    .navFirst {
+        top:-450px;
+    }
+
+    .main__text {
+        width: 90%;
+    }
+ 
+    .main__img {
+        height: 530px;
+    }
+ 
+    h1 {
+        padding-top: 0px;
+        font-size: 3.5em;
+        padding-bottom: 20px;
+    }
+ 
+    .main__text p {
+        font-size: 1.5em;
+        padding-bottom: 30px;
+    }
+
+    .main__text button {
+        font-size: 1.2em;
+    }
+
+    /*----second contain---*/
+
+    #second_img {
+        width: 90%;
+        padding-top: 10px;
+    }
+
+    .locationTexto p {
+        width: 86%;
+        font-size: 1.1em;
+    }
+
+    .second__text img {
+        margin-left: -30px;
+    }
+
+    /*---third contain ---**/
+
+    .cake p, .dona p, .drive p { 
+        width:410px;
+        font-size:1.1em ;
+        margin: 0 auto;
+        color:#494646;
+        text-align:center;
+   }
+
+    /*forth contain-*/
+ 
+    .about h2 {
+        margin-top: 0px;
+        width: 90%;
+        font-size: 4em;
+        margin:0 auto;
+        padding-left: 0px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+ 
+    .about p {
+        font-size: 1.2em;
+        color:#494646;
+    }
+ 
+    /*--fith contain--*/
+
+    .chef h2 {
+        font-size: 4em;
+        padding-bottom: 10px;
+    }
+    
+    .chef p {
+        font-size: 1.2em;
+    }
+
+    /*---sixth contain----*/
+    .title h2 {
+        font-size: 5em;
+    }
+
+    #menu {
+        width: 96%;
+    }
+
+    .dessert_text p {
+        width: 100%;
+        font-size: 1.6em;
+    }
+  
+    .img_dessert {
+        padding-top: 60px;
+        width: 94%;
+        margin:0 auto;
+        display: none;
+    }
+
+    .sixth__contain button {
+        margin-left: 20%;
+        margin-top: 40px;
+        font-size: 1.4em;
+    }
+
+    /*---seventh contain ---*/
+
+    .info h2 {
+        font-size: 5em;
+    }
+
+    .formulary h2 {
+        padding-top: 220px;
+        font-size: 5em;
+    }
+
+    input[type=submit] {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    /*footer*/
+
+    #siteLink h3, #references h3 {
+        padding-top: 100px;
+        font-size:1.5em ;
+        padding-bottom:20px ;
+    }
+    
+    #siteLink h4, #references h4 {
+        padding-bottom: 11px;
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width:999px) {
+    #logohidden svg {
+        padding-left: 20px;
+    }
+
+    #navBar {
+        flex:70%;
+    }
+
+    #navBar nav {
+        align-items: center;
+    }
+
+    #navBar a {
+        font-size:1.2em;
+    }
+
+    #redSocial {
+        flex:20%;
+    }
+
+    .navFirst a {
+        font-size: 1.2em;
+    }
+
+    .imglogo {
+        padding-top: 20px;
+        width: 80%;
+    }
+
+    .red {
+        width: 60%;
+        margin-left: 40%;
+        padding-top: 10px;
+    }
+
+    .navFirst {
+        top:-400px;
+    }
+
+    .main__text {
+        width: 92%;
+    }
+ 
+    .main__img {
+        height: 460px;
+    }
+ 
+    h1 {
+        padding-top: 0px;
+        font-size: 3.2em;
+        padding-bottom: 10px;
+    }
+ 
+    .main__text p {
+        font-size: 1.4em;
+        padding-bottom: 30px;
+    }
+
+    .main__text button {
+        font-size: 1.2em;
+    }
+
+    /*----second contain---*/
+
+    #second_img {
+        width: 96%;
+        padding-top: 10px;
+    }
+
+    .locationTexto p {
+        width: 86%;
+        font-size: 1em;
+    }
+
+    .second__text img {
+        margin-left: -20px;
+        margin-top: -40px;
+    }
+
+    /*---third contain ---**/
+
+    .cake p, .dona p, .drive p { 
+        width:410px;
+        font-size:1em ;
+        text-align:center;
+   }
+
+    /*forth contain-*/
+ 
+    .about h2 {
+        margin-top: 0px;
+        width: 90%;
+        font-size: 3.4em;
+        margin:0 auto;
+        padding-left: 0px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+ 
+    .about p {
+        font-size: 1.2em;
+        color:#494646;
+    }
+ 
+    /*--fith contain--*/
+
+    .chef h2 {
+        padding-top: 20px;
+        font-size: 3.4em;
+        padding-bottom: 10px;
+    }
+    
+    .chef p {
+        font-size: 1.2em;
+    }
+
+    /*---sixth contain----*/
+    .title h2 {
+        font-size: 4em;
+        padding-bottom: 0px;
+    }
+
+    #menu {
+        width: 96%;
+    }
+
+    .dessert_text p {
+        width: 100%;
+        font-size: 1.2em;
+    }
+  
+    .img_dessert {
+        padding-top: 60px;
+        width: 96%;
+        margin:0 auto;
+        display: none;
+    }
+
+    .sixth__contain button {
+        margin-left: 18%;
+        margin-top: 40px;
+        font-size: 1.2em;
+    }
+
+    /*---seventh contain ---*/
+     .contact {
+         flex: 100%;
+     }
+
+     .formulary {
+         padding-top: 100px;
+         flex: 100%;
+     }
+
+    .info h2 {
+        font-size: 4em;
+    }
+
+    .infoTwo p {
+        font-size: 1.3em;
+    }
+
+    .formulary h2 {
+        font-size: 4em;
+    }
+
+    input[type=submit] {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    /*footer*/
+
+    #siteLink h3, #references h3 {
+        padding-top: 100px;
+        font-size:1.5em ;
+        padding-bottom:20px ;
+    }
+    
+    #siteLink h4, #references h4 {
+        padding-bottom: 11px;
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width:899px) {
+    #logohidden svg {
+        padding-left: 10px;
+    }
+
+    #navBar {
+        flex:70%;
+    }
+
+    #navBar nav {
+        align-items: center;
+    }
+
+    #navBar a {
+        font-size:1.2em;
+    }
+
+    #redSocial {
+        flex:20%;
+    }
+
+    .navFirst a {
+        font-size: 1.2em;
+    }
+
+    .imglogo {
+        padding-top: 20px;
+        width: 80%;
+    }
+
+    .red {
+        width: 80%;
+        margin-left: 30%;
+        padding-top: 10px;
+    }
+
+    .navFirst {
+        top:-360px;
+    }
+
+    .main__text {
+        width: 92%;
+    }
+ 
+    .main__img {
+        height: 410px;
+    }
+ 
+    h1 {
+        padding-top: 0px;
+        font-size: 2.9em;
+        padding-bottom: 10px;
+    }
+ 
+    .main__text p {
+        font-size: 1.2em;
+        padding-bottom: 20px;
+    }
+
+    .main__text button {
+        font-size: 1.2em;
+    }
+
+    /*----second contain---*/
+
+    #second_img {
+        width: 96%;
+        padding-top: 0px;
+    }
+
+    .locationTexto p {
+        width: 86%;
+        font-size: 1em;
+    }
+
+    .second__text img {
+        margin-left: -20px;
+        margin-top: -40px;
+    }
+
+    /*---third contain ---**/
+
+    .cake p, .dona p, .drive p { 
+        width:410px;
+        font-size:1em ;
+        text-align:center;
+   }
+
+    /*forth contain-*/
+ 
+    .about h2 {
+        margin-top: 0px;
+        width: 88%;
+        font-size: 3em;
+        margin:0 auto;
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+ 
+    .about p {
+        font-size: 1.1em;
+        color:#494646;
+    }
+ 
+    /*--fith contain--*/
+
+    .chef h2 {
+        padding-top: 20px;
+        font-size: 3.4em;
+        padding-bottom: 10px;
+    }
+    
+    .chef p {
+        font-size: 1.1em;
+    }
+
+    /*---sixth contain----*/
+    .title h2 {
+        font-size: 4em;
+        padding-bottom: 0px;
+    }
+
+    #menu {
+        width: 100%;
+    }
+
+    .dessert_text p {
+        width: 100%;
+        font-size: 1em;
+    }
+  
+    .img_dessert {
+        padding-top: 60px;
+        width: 94%;
+        margin:0 auto;
+        display: none;
+    }
+
+    .sixth__contain button {
+        margin-left: 16%;
+        margin-top: 40px;
+        font-size: 1em;
+    }
+
+    /*---seventh contain ---*/
+     .contact {
+         flex: 100%;
+     }
+
+     .formulary {
+         padding-top: 100px;
+         flex: 100%;
+     }
+
+    .info h2 {
+        font-size: 4em;
+    }
+
+    .infoTwo p {
+        font-size: 1.3em;
+    }
+
+    .formulary h2 {
+        font-size: 4em;
+    }
+
+    input[type=submit] {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    /*footer*/
+
+    #siteLink h3, #references h3 {
+        padding-top: 100px;
+        font-size:1.5em ;
+        padding-bottom:20px ;
+    }
+    
+    #siteLink h4, #references h4 {
+        padding-bottom: 11px;
+        font-size: 1.3em;
+    }
+
+    #social {
+        width: 30%;
+        margin-top: 80%px;
+        margin-left: 34%;
+    }
+
+    #social img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width:799px) {
+    #navbar {
+        display: none;
+    }
+
+    .device {
+        display: block;
+    }
+
+    .container {
+        top:-160px;
+        right: -300px;
+    }
+
+    #navBar a {
+        font-size:1.2em;
+    }
+
+    .logo {
+        flex:100%;
+        height: 150px;
+    }
+
+    .imglogo {
+        padding-top: 0px;
+        width: 22%;
+        margin-left: 6%;
+    }
+
+    .main__img {
+        flex: 100%;
+        height: 550px;
+    }
+
+    #main__img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #main__img img {
+        width: 100%;
+    }
+
+    .main__cta {
+        flex: 50%;
+    }
+
+    .navFirst {
+        display: none;
+        top:-700px;
+    }
+
+
+    .red {
+        display: none;
+        width: 80%;
+        margin-left: 66%;
+        padding-top: 10px;
+    }
+
+
+    .main__text {
+        width: 92%;
+        text-align: center;
+    }
+ 
+ 
+    h1 {
+        padding-top: 30px;
+        font-size: 3.4em;
+        padding-bottom: 10px;
+    }
+ 
+    .main__text p {
+        width: 80%;
+        margin:0 auto;
+        font-size: 1.4em;
+        padding-bottom: 20px;
+    }
+
+    .main__text button {
+        padding: 12px;
+        font-size: 1.4em;
+    }
+
+    /*----second contain---*/
+    .log {
+        flex: 100%;
+    }
+
+    .second__img {
+        flex: 50%;
+    }
+
+    .second__text {
+        flex: 100%;
+    }
+
+    #second_img {
+        width: 96%;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .locationTexto p {
+        width: 86%;
+        font-size: 1em;
+    }
+
+    .second__text img {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 0px;
+    }
+
+    /*---third contain ---**/
+
+    .cake p, .dona p, .drive p { 
+        width:410px;
+        font-size:1em ;
+        text-align:center;
+   }
+
+    /*forth contain-*/
+    .ice__img {
+        flex:100%;
+    }
+
+    .ice__img img {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .about {
+        flex: 100%;
+        text-align: center;
+    }
+ 
+    .about h2 {
+        margin-top: 0px;
+        width: 88%;
+        font-size: 3.6em;
+        margin:0 auto;
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+ 
+    .about p {
+        width: 76%;
+        font-size: 1.2em;
+        color:#494646;
+    }
+ 
+    /*-- fith contain--*/
+    .fith__contain {
+        padding-bottom: 80px;
+    }
+    .chef {
+        flex: 100%;
+        order: 2;
+        text-align: center;
+    }
+
+    .img__chef {
+        padding-top: 50px;
+        flex:100%;
+        order: 1;
+    }
+
+    .img__chef img {
+        width: 90%;
+        margin-top: 0px;
+        margin-left: 5%;
+    }
+
+    .chef h2 {
+        padding-top: 30px;
+        font-size: 3.6em;
+        padding-bottom: 10px;
+    }
+    
+    .chef p {
+        width: 76%;
+        font-size: 1.2em;
+        color:#494646;
+        padding-bottom: 0px;
+    }
+
+    /*---sixth contain----*/
+    .title h2 {
+        font-size: 4em;
+        padding-bottom: 0px;
+    }
+
+    .menu {
+        flex:100%;
+        order: 2;
+        padding-top: 0px;
+    }
+
+    #menu {
+        width: 80%;
+    }
+
+    .dessert_svg {
+        flex: 30%;
+    }
+
+    .dessert_text {
+        flex: 70%;
+    }
+
+    .dessert_text p {
+        width: 100%;
+        font-size: 1.3em;
+    }
+
+    .img__menu {
+        flex: 100%;
+        padding-bottom: 50px;
+    }
+  
+    .img_dessert {
+        padding-top: 60px;
+        width: 90%;
+        margin:0 auto;
+        display: none;
+    }
+
+    .sixth__contain button {
+        margin-left: 32%;
+        margin-top: 40px;
+        font-size: 1.2em;
+    }
+
+    /*---seventh contain ---*/
+     .contact {
+         flex: 100%;
+     }
+
+     .contact__img {
+         width: 90%;
+     }
+
+     .formulary {
+         padding-top: 100px;
+         flex: 100%;
+     }
+
+    .info h2 {
+        font-size: 4em;
+    }
+
+    .infoTwo p {
+        font-size: 1.3em;
+    }
+
+    .formulary h2 {
+        font-size: 4em;
+    }
+
+    input[type=submit] {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    /*footer*/
+
+    .log {
+        flex: 100%;
+    }
+
+    .lg {
+        width: 18%;
+    }
+
+    .siteLink {
+        flex: 100%;
+    }
+
+    .references {
+        flex:100%;
+    }
+
+    #siteLink, #references {
+        text-align: center;
+        padding-bottom: 40px;
+        width: 50%;
+    }
+
+    #siteLink h3, #references h3 {
+        padding-top: 20px;
+        font-size:1.5em ;
+        padding-bottom:20px ;
+    }
+    
+    #siteLink h4, #references h4 {
+        padding-bottom: 11px;
+        font-size: 1.3em;
+    }
+
+    .social {
+        flex: 100%;
+    }
+
+    #social {
+        width: 10%;
+        margin: 0 auto;
+        margin-top: 0;
+        margin-left: 46%;
+        padding-bottom: 30px;
+    }
+
+    #social img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width:699px) {
+    #navbar {
+        display: none;
+    }
+
+    .device {
+        display: block;
+    }
+
+    .container {
+        top:-160px;
+        right: -230px;
+    }
+
+    #navBar a {
+        font-size:1.2em;
+    }
+
+    .logo {
+        flex:100%;
+        height: 150px;
+    }
+
+    .imglogo {
+        padding-top: 0px;
+        width: 22%;
+        margin-left: 6%;
+    }
+
+    .main__img {
+        flex: 100%;
+        height: 550px;
+    }
+
+    #main__img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #main__img img {
+        width: 100%;
+    }
+
+    .main__cta {
+        flex: 50%;
+    }
+
+    .navFirst {
+        display: none;
+        top:-700px;
+    }
+
+
+    .red {
+        display: none;
+        width: 80%;
+        margin-left: 66%;
+        padding-top: 10px;
+    }
+
+
+    .main__text {
+        width: 92%;
+        text-align: center;
+    }
+ 
+ 
+    h1 {
+        padding-top: 30px;
+        font-size: 3.4em;
+        padding-bottom: 10px;
+    }
+ 
+    .main__text p {
+        width: 80%;
+        margin:0 auto;
+        font-size: 1.4em;
+        padding-bottom: 20px;
+    }
+
+    .main__text button {
+        padding: 12px;
+        font-size: 1.4em;
+    }
+
+    /*----second contain---*/
+    .log {
+        flex: 100%;
+    }
+
+    .second__img {
+        flex: 50%;
+    }
+
+    .second__text {
+        flex: 100%;
+    }
+
+    #second_img {
+        width: 96%;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .locationTexto p {
+        width: 86%;
+        font-size: 1em;
+    }
+
+    .second__text img {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 0px;
+    }
+
+    /*---third contain ---**/
+
+    .cake p, .dona p, .drive p { 
+        width:410px;
+        font-size:1em ;
+        text-align:center;
+   }
+
+    /*forth contain-*/
+    .ice__img {
+        flex:100%;
+    }
+
+    .ice__img img {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .about {
+        flex: 100%;
+        text-align: center;
+    }
+ 
+    .about h2 {
+        margin-top: 0px;
+        width: 88%;
+        font-size: 3.6em;
+        margin:0 auto;
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+ 
+    .about p {
+        width: 76%;
+        font-size: 1.2em;
+        color:#494646;
+    }
+ 
+    /*-- fith contain--*/
+    .fith__contain {
+        padding-bottom: 80px;
+    }
+    .chef {
+        flex: 100%;
+        order: 2;
+        text-align: center;
+    }
+
+    .img__chef {
+        padding-top: 50px;
+        flex:100%;
+        order: 1;
+    }
+
+    .img__chef img {
+        width: 90%;
+        margin-top: 0px;
+        margin-left: 5%;
+    }
+
+    .chef h2 {
+        padding-top: 30px;
+        font-size: 3.6em;
+        padding-bottom: 10px;
+    }
+    
+    .chef p {
+        width: 76%;
+        font-size: 1.2em;
+        color:#494646;
+        padding-bottom: 0px;
+    }
+
+    /*---sixth contain----*/
+    .title h2 {
+        font-size: 4em;
+        padding-bottom: 0px;
+    }
+
+    .menu {
+        flex:100%;
+        order: 2;
+        padding-top: 0px;
+    }
+
+    #menu {
+        width: 80%;
+    }
+
+    .dessert_svg {
+        flex: 30%;
+    }
+
+    .dessert_text {
+        flex: 70%;
+    }
+
+    .dessert_text p {
+        width: 100%;
+        font-size: 1.3em;
+    }
+
+    .img__menu {
+        flex: 100%;
+        padding-bottom: 50px;
+    }
+  
+    .img_dessert {
+        padding-top: 60px;
+        width: 90%;
+        margin:0 auto;
+        display: none;
+    }
+
+    .sixth__contain button {
+        margin-left: 28%;
+        margin-top: 40px;
+        font-size: 1.2em;
+    }
+
+    /*---seventh contain ---*/
+     .contact {
+         flex: 100%;
+     }
+
+     .contact__img {
+         width: 90%;
+     }
+
+     .formulary {
+         padding-top: 100px;
+         flex: 100%;
+     }
+
+     .infoTwo {
+         top:20px;
+         left: 80px;
+     }
+
+    .info h2 {
+        font-size: 3.6em;
+        margin-top: -560px;
+    }
+
+    .infoTwo p {
+        font-size: 1.3em;
+    }
+
+    .formulary h2 {
+        font-size: 3.6em;
+    }
+
+    input[type=submit] {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    /*footer*/
+
+    .log {
+        flex: 100%;
+    }
+
+    .lg {
+        width: 18%;
+    }
+
+    .siteLink {
+        flex: 100%;
+    }
+
+    .references {
+        flex:100%;
+    }
+
+    #siteLink, #references {
+        text-align: center;
+        padding-bottom: 40px;
+        width: 50%;
+    }
+
+    #siteLink h3, #references h3 {
+        padding-top: 20px;
+        font-size:1.5em ;
+        padding-bottom:20px ;
+    }
+    
+    #siteLink h4, #references h4 {
+        padding-bottom: 11px;
+        font-size: 1.3em;
+    }
+
+    .social {
+        flex: 100%;
+    }
+
+    #social {
+        width: 10%;
+        margin: 0 auto;
+        margin-top: 0;
+        margin-left: 46%;
+        padding-bottom: 30px;
+    }
+
+    #social img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width:599px) {
+    html,body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    #navbar {
+        display: none;
+    }
+
+    .device {
+        display: block;
+    }
+
+    .container {
+        top:-130px;
+        right: -140px;
+    }
+
+    #navBar a {
+        font-size:1.2em;
+    }
+
+    .logo {
+        flex:100%;
+        height: 110px;
+    }
+
+    .imglogo {
+        padding-top: 0px;
+        width: 22%;
+        margin-left: 6%;
+    }
+
+    .main__img {
+        flex: 100%;
+        height: 550px;
+    }
+
+    #main__img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #main__img img {
+        width: 100%;
+    }
+
+    .main__cta {
+        flex: 50%;
+    }
+
+    .navFirst {
+        display: none;
+        top:-700px;
+    }
+
+
+    .red {
+        display: none;
+        width: 80%;
+        margin-left: 66%;
+        padding-top: 10px;
+    }
+
+
+    .main__text {
+        width: 92%;
+        text-align: center;
+    }
+ 
+ 
+    h1 {
+        padding-top: 30px;
+        font-size: 3.4em;
+        padding-bottom: 10px;
+    }
+ 
+    .main__text p {
+        width: 86%;
+        margin:0 auto;
+        font-size: 1.4em;
+        padding-bottom: 20px;
+    }
+
+    .main__text button {
+        padding: 12px 20px 12px 20px;
+        font-size: 1.4em;
+    }
+
+    /*----second contain---*/
+    .log {
+        flex: 100%;
+    }
+
+    .second__img {
+        flex: 50%;
+    }
+
+    .second__text {
+        flex: 100%;
+    }
+
+    #second_img {
+        width: 96%;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .locationTexto p {
+        width: 86%;
+        font-size: 1em;
+    }
+
+    .second__text img {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 0px;
+    }
+
+    /*---third contain ---**/
+
+    .cake p, .dona p, .drive p { 
+        width:410px;
+        font-size:1em ;
+        text-align:center;
+   }
+
+    /*forth contain-*/
+    .ice__img {
+        flex:100%;
+    }
+
+    .ice__img img {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .about {
+        flex: 100%;
+        text-align: center;
+    }
+ 
+    .about h2 {
+        margin-top: 0px;
+        width: 88%;
+        font-size: 3.6em;
+        margin:0 auto;
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+ 
+    .about p {
+        width: 76%;
+        font-size: 1.1em;
+        color:#494646;
+    }
+ 
+    /*-- fith contain--*/
+    .fith__contain {
+        padding-bottom: 80px;
+    }
+    .chef {
+        flex: 100%;
+        order: 2;
+        text-align: center;
+    }
+
+    .img__chef {
+        padding-top: 50px;
+        flex:100%;
+        order: 1;
+    }
+
+    .img__chef img {
+        width: 90%;
+        margin-top: 0px;
+        margin-left: 5%;
+    }
+
+    .chef h2 {
+        padding-top: 30px;
+        font-size: 3.6em;
+        padding-bottom: 10px;
+    }
+    
+    .chef p {
+        width: 76%;
+        font-size: 1.1em;
+        color:#494646;
+        padding-bottom: 0px;
+    }
+
+    /*---sixth contain----*/
+    .title h2 {
+        font-size: 3.4em;
+        padding-bottom: 0px;
+    }
+
+    .menu {
+        flex:100%;
+        order: 2;
+        padding-top: 0px;
+    }
+
+    #menu {
+        width: 80%;
+    }
+
+    .dessert_svg {
+        flex: 30%;
+    }
+
+    .dessert_text {
+        flex: 70%;
+    }
+
+    .dessert_text p {
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    .img__menu {
+        flex: 100%;
+        padding-bottom: 50px;
+    }
+  
+    .img_dessert {
+        padding-top: 60px;
+        width: 90%;
+        margin:0 auto;
+        display: none;
+    }
+
+    .sixth__contain button {
+        margin-left: 24%;
+        margin-top: 40px;
+        font-size: 1.2em;
+    }
+
+    /*---seventh contain ---*/
+     .contact {
+         flex: 100%;
+     }
+
+     .contact__img {
+         width: 90%;
+     }
+
+     .formulary {
+         padding-top: 30px;
+         flex: 100%;
+     }
+
+     .infoTwo {
+         width: 90%;
+         top:10px;
+         left: 60px;
+     }
+
+     .info h2 {
+         margin-top: -490px;
+         font-size:3.6em ;
+     }
+
+
+
+    .formulary h2 {
+        font-size: 3.6em;
+    }
+
+    input[type=submit] {
+        width: 50%;
+        margin-left: 24%;
+    }
+
+    /*footer*/
+
+    .log {
+        flex: 100%;
+    }
+
+    .lg {
+        width: 18%;
+    }
+
+    .siteLink {
+        flex: 100%;
+    }
+
+    .references {
+        flex:100%;
+    }
+
+    #siteLink, #references {
+        text-align: center;
+        padding-bottom: 40px;
+        width: 50%;
+    }
+
+    #siteLink h3, #references h3 {
+        padding-top: 20px;
+        font-size:1.5em ;
+        padding-bottom:20px ;
+    }
+    
+    #siteLink h4, #references h4 {
+        padding-bottom: 11px;
+        font-size: 1.3em;
+    }
+
+    .social {
+        flex: 100%;
+    }
+
+    #social {
+        width: 10%;
+        margin: 0 auto;
+        margin-top: 0;
+        margin-left: 46%;
+        padding-bottom: 30px;
+    }
+
+    #social img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width:499px) {
+    html,body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    #navbar {
+        display: none;
+    }
+
+    .device {
+        display: block;
+    }
+
+    .container {
+        top:-130px;
+        right: -60px;
+    }
+
+    #navBar a {
+        font-size:1.2em;
+    }
+
+    .logo {
+        flex:100%;
+        height: 100px;
+    }
+
+    .imglogo {
+        padding-top: 0px;
+        width: 26%;
+        margin-left: 6%;
+    }
+
+    .main__img {
+        flex: 100%;
+        height: 410px;
+    }
+
+    #main__img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #main__img img {
+        width: 100%;
+    }
+
+    .main__cta {
+        flex: 50%;
+    }
+
+    .navFirst {
+        display: none;
+        top:-700px;
+    }
+
+
+    .red {
+        display: none;
+        width: 80%;
+        margin-left: 66%;
+        padding-top: 10px;
+    }
+
+
+    .main__text {
+        width: 92%;
+        text-align: center;
+    }
+ 
+ 
+    h1 {
+        padding-top: 30px;
+        font-size: 3.4em;
+        padding-bottom: 10px;
+    }
+ 
+    .main__text p {
+        width: 86%;
+        margin:0 auto;
+        font-size: 1.4em;
+        padding-bottom: 20px;
+    }
+
+    .main__text button {
+        padding: 12px 20px 12px 20px;
+        font-size: 1.4em;
+    }
+
+    /*----second contain---*/
+    .log {
+        flex: 100%;
+    }
+
+    .second__img {
+        flex: 50%;
+    }
+
+    .second__text {
+        flex: 100%;
+    }
+
+    #second_img {
+        width: 96%;
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+
+    .locationTexto p {
+        width: 86%;
+        font-size: 1em;
+    }
+
+    .second__text img {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 0px;
+    }
+
+    /*---third contain ---**/
+
+    .cake p, .dona p, .drive p { 
+        width:80%;
+        font-size:1em ;
+        text-align:center;
+   }
+
+    /*forth contain-*/
+
+    .forth__contain {
+        padding-top: 120px;
+    }
+
+    .ice__img {
+        flex:100%;
+    }
+
+    .ice__img img {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .about {
+        flex: 100%;
+        text-align: center;
+    }
+ 
+    .about h2 {
+        margin-top: 0px;
+        width: 88%;
+        font-size: 3.3em;
+        margin:0 auto;
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+ 
+    .about p {
+        width: 80%;
+        font-size: 1.1em;
+        color:#494646;
+    }
+ 
+    /*-- fith contain--*/
+    .fith__contain {
+        padding-bottom: 80px;
+    }
+    .chef {
+        flex: 100%;
+        order: 2;
+        text-align: center;
+    }
+
+    .img__chef {
+        padding-top: 50px;
+        flex:100%;
+        order: 1;
+    }
+
+    .img__chef img {
+        width: 90%;
+        margin-top: 0px;
+        margin-left: 5%;
+    }
+
+    .chef h2 {
+        padding-top: 30px;
+        font-size: 3.3em;
+        padding-bottom: 10px;
+    }
+    
+    .chef p {
+        width: 80%;
+        font-size: 1.1em;
+        color:#494646;
+        padding-bottom: 0px;
+    }
+
+    /*---sixth contain----*/
+    .title h2 {
+        font-size: 3em;
+        padding-bottom: 0px;
+    }
+
+    .menu {
+        flex:100%;
+        order: 2;
+        padding-top: 0px;
+    }
+
+    #menu {
+        width: 90%;
+    }
+
+    .dessert_svg {
+        flex: 30%;
+    }
+
+    .dessert_text {
+        flex: 70%;
+    }
+
+    .dessert_text p {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .img__menu {
+        flex: 100%;
+        padding-bottom: 50px;
+    }
+  
+    .img_dessert {
+        padding-top: 60px;
+        width: 90%;
+        margin:0 auto;
+        display: none;
+    }
+
+    .sixth__contain button {
+        margin-left: 16%;
+        margin-top: 40px;
+        font-size: 1.2em;
+    }
+
+    /*---seventh contain ---*/
+     .contact {
+         flex: 100%;
+     }
+
+     .contact__img {
+         width: 90%;
+     }
+
+     .formulary {
+         padding-top: 30px;
+         flex: 100%;
+     }
+
+     .infoTwo {
+        width: 90%;
+        top:0px;
+        left: 60px;
+    }
+
+    .info_foodSvg svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .info_foodTexto p {
+        width: 80%;
+        font-size: 1em;
+    }
+
+    .info h2 {
+        margin-top: -400px;
+        font-size:3.6em ;
+    }
+
+    .formulary h2 {
+        font-size: 3.6em;
+    }
+
+    label {
+        font-size: 1.6em;
+    }
+
+    input[type=submit] {
+        width: 60%;
+        margin-left: 18%;
+    }
+
+    /*footer*/
+
+    .log {
+        flex: 100%;
+    }
+
+    .lg {
+        width: 18%;
+    }
+
+    .siteLink {
+        flex: 100%;
+    }
+
+    .references {
+        flex:100%;
+    }
+
+    #siteLink, #references {
+        text-align: center;
+        padding-bottom: 40px;
+        width: 50%;
+    }
+
+    #siteLink h3, #references h3 {
+        padding-top: 20px;
+        font-size:1.5em ;
+        padding-bottom:20px ;
+    }
+    
+    #siteLink h4, #references h4 {
+        padding-bottom: 11px;
+        font-size: 1.3em;
+    }
+
+    .social {
+        flex: 100%;
+    }
+
+    #social {
+        width: 10%;
+        margin: 0 auto;
+        margin-top: 0;
+        margin-left: 46%;
+        padding-bottom: 30px;
+    }
+
+    #social img {
+        width: 100%;
+    }
+}
+
+@media only screen and  (max-width:399px) {
+
+    html,body {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    #navbar {
+        display: none;
+    }
+
+    .device {
+        display: block;
+    }
+
+    .container {
+        top:-130px;
+        right: 30px;
+    }
+
+    #navBar a {
+        font-size:1.2em;
+    }
+
+    .logo {
+        flex:100%;
+        height: 90px;
+    }
+
+    .imglogo {
+        padding-top: 0px;
+        width: 26%;
+        margin-left: 6%;
+    }
+
+    .main__img {
+        flex: 100%;
+        height: 310px;
+    }
+
+    #main__img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #main__img img {
+        width: 100%;
+    }
+
+    .main__cta {
+        flex: 100%;
+    }
+
+    .navFirst {
+        display: none;
+        top:-700px;
+    }
+
+
+    .red {
+        display: none;
+        width: 80%;
+        margin-left: 66%;
+        padding-top: 10px;
+    }
+
+
+    .main__text {
+        width: 92%;
+        text-align: center;
+    }
+ 
+ 
+    h1 {
+        padding-top: 20px;
+        font-size: 2.6em;
+        padding-bottom: 10px;
+    }
+ 
+    .main__text p {
+        width: 90%;
+        margin:0 auto;
+        font-size: 1.1em;
+        padding-bottom: 20px;
+    }
+
+    .main__text button {
+        padding: 12px 20px 12px 20px;
+        font-size: 1.1em;
+    }
+
+    /*----second contain---*/
+    .log {
+        flex: 100%;
+    }
+
+    .second__img {
+        flex: 50%;
+    }
+
+    .second__text {
+        flex: 100%;
+    }
+
+    #second_img {
+        width: 96%;
+        padding-top: 40px;
+        padding-bottom: 70px;
+    }
+
+    .locationTexto p {
+        width: 86%;
+        font-size: 1em;
+    }
+
+    .second__text img {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 0px;
+    }
+
+    /*---third contain ---**/
+
+    .cake p, .dona p, .drive p { 
+        width:80%;
+        font-size:1em ;
+        text-align:center;
+   }
+
+    /*forth contain-*/
+
+    .forth__contain {
+        padding-top: 120px;
+    }
+
+    .ice__img {
+        flex:100%;
+    }
+
+    .ice__img img {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .about {
+        flex: 100%;
+        text-align: center;
+    }
+ 
+    .about h2 {
+        margin-top: 0px;
+        width: 88%;
+        font-size: 2.9em;
+        margin:0 auto;
+        padding-left: 0px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+ 
+    .about p {
+        width: 90%;
+        font-size: 1em;
+        color:#494646;
+    }
+ 
+    /*-- fith contain--*/
+    .fith__contain {
+        padding-bottom: 60px;
+    }
+    .chef {
+        flex: 100%;
+        order: 2;
+        text-align: center;
+    }
+
+    .img__chef {
+        padding-top: 50px;
+        flex:100%;
+        order: 1;
+    }
+
+    .img__chef img {
+        width: 90%;
+        margin-top: 0px;
+        margin-left: 5%;
+    }
+
+    .chef h2 {
+        padding-top: 30px;
+        font-size: 3em;
+        padding-bottom: 10px;
+    }
+    
+    .chef p {
+        width: 90%;
+        font-size: 1em;
+        color:#494646;
+        padding-bottom: 0px;
+    }
+
+    /*---sixth contain----*/
+    .title h2 {
+        font-size: 2.4em;
+        padding-bottom: 0px;
+    }
+
+    .menu {
+        flex:100%;
+        order: 2;
+        padding-top: 0px;
+    }
+
+    #menu {
+        width: 90%;
+    }
+
+    .dessert_svg {
+        flex: 30%;
+    }
+
+    .dessert_svg svg {
+        width: 70px;
+        height: 70px;
+    }
+
+    .dessert_text {
+        flex: 70%;
+    }
+
+    .dessert_text p {
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    .img__menu {
+        flex: 100%;
+        padding-bottom: 50px;
+    }
+  
+    .img_dessert {
+        padding-top: 60px;
+        width: 90%;
+        margin:0 auto;
+        display: none;
+    }
+
+    .sixth__contain button {
+        margin-left: 8%;
+        margin-top: 40px;
+        font-size: 1em;
+    }
+
+    /*---seventh contain ---*/
+     .contact {
+         flex: 100%;
+     }
+
+     .contact__img {
+         width: 100%;
+     }
+
+     .formulary {
+         padding-top: 30px;
+         flex: 100%;
+     }
+
+     .infoTwo {
+        width: 90%;
+        top:30px;
+        left: 30px;
+    }
+
+    .info_foodSvg svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .info_foodTexto p {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .info h2 {
+        margin-top: -400px;
+        font-size:3em ;
+    }
+
+    .formulary h2 {
+        font-size: 3em;
+    }
+
+    label {
+        font-size: 1.6em;
+    }
+
+    input[type=submit] {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    /*footer*/
+
+    .log {
+        flex: 100%;
+    }
+
+    .lg {
+        width: 18%;
+    }
+
+    .siteLink {
+        flex: 100%;
+    }
+
+    .references {
+        flex:100%;
+    }
+
+    #siteLink, #references {
+        text-align: center;
+        padding-bottom: 40px;
+        width: 50%;
+    }
+
+    #siteLink h3, #references h3 {
+        padding-top: 20px;
+        font-size:1.5em ;
+        padding-bottom:20px ;
+    }
+    
+    #siteLink h4, #references h4 {
+        padding-bottom: 11px;
+        font-size: 1.3em;
+    }
+
+    .social {
+        flex: 100%;
+    }
+
+    #social {
+        width: 10%;
+        margin: 0 auto;
+        margin-top: 0;
+        margin-left: 46%;
+        padding-bottom: 30px;
+    }
+
+    #social img {
+        width: 100%;
+    }
+}
+
+
+
 
