@@ -1,6 +1,6 @@
 //menu hambu
-let burger = document.getElementById('burger'),
-	 nav    = document.getElementById('main-nav');
+let burger = document.getElementById('burger')
+const nav = document.getElementById('main-nav');
 	
 	
 
@@ -30,7 +30,7 @@ function showSlides() {
   setTimeout(showSlides, 2200); // Change image every 2 seconds
 }
 
-window.onscroll = function() {scrollFunction()};
+window.addEventListener('scroll',scrollFunction)
     
 function scrollFunction() {
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {

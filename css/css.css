@@ -5,6 +5,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .wrapper {
     width:100%;
     height: 100%;
@@ -23,6 +27,7 @@
 
 .logo {
     flex: 15%;
+    position: relative;
 }
 
 .imglogo {
@@ -39,6 +44,7 @@
     overflow: hidden;
     flex:44%;
     height:950px;
+    position: relative;
 }
 
 .main__img img{
@@ -49,11 +55,11 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width:90%;
+    width:100%;
+    top:10%;
     text-decoration:none;
-    position:relative;
+    position:absolute;
     margin:0 auto;
-    top:-820px;
 }
 
 .navFirst a {
@@ -61,6 +67,7 @@
     font-size:1.8em ;
     color:white;
     font-weight: bold;
+    transition: all 0.5s;
 }
 
 .navFirst a:hover {
@@ -85,11 +92,14 @@
 #logohidden {
     flex: 10%;
     overflow:hidden;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
-#logohidden svg{
-    padding-top: 5px;
-    padding-left:40px ;
+#logohidden img{
+   width: 100%;
+   max-width: 120px;
 }
 
 #navBar {
@@ -98,27 +108,36 @@
 }
 
 #navBar nav {
-   padding-top: 20px;
-   width:60%;
-   margin-left:100px;
+   width:40%;
+   height: 100%;
+   padding-left: 3%;
    display: flex;
+   align-items: center;
    justify-content: space-around;
 }
 
 #navBar a {
    
     text-decoration: none;
-    font-size:1.8em ;
+    font-size:1.6em ;
     color:white;
-    font-weight: bold;
+    font-weight:500;
+    padding-bottom: 4px;
+}
+
+#navBar a:hover {
+  font-weight: 600;
 }
 
 /*-navbar mobile*/
 
 .device {
-	position: relative;
-	width: 345px;
-	height: 220px;
+    left: 0;
+	width: 100%;
+	height: 170%;
+    z-index: 100;
+    top: 0;
+    position: absolute;
     display: none;
 }
 
@@ -132,7 +151,6 @@
 /*style nav*/
 .main-nav {
     position: absolute;
-    top: 50px;
     right: 0;
     left: 0;
     bottom: 0;
@@ -167,17 +185,16 @@
 .main-nav ul {
     display: inline-flex;
     flex-direction: column;
-    height: 93%; 
+    height: 100%; 
     justify-content: center;
-    margin-top:0px ;
-    
+    text-align: start;
+    width: 80%; 
 }
 
 .main-nav li {
     display: block;
     margin: .5rem 0;
-    text-align: left;
-  
+    text-align: left; 
 }
 
 
@@ -269,44 +286,56 @@
 #redSocial {
     flex: 10%;
     overflow: hidden;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 100%;
 }
 
 #redSocial >.facebook  {
-    margin-bottom:10px ;
     stroke:#fff;
     fill:transparent;
-    width:50px;
-    height:50px;
+    width:48px;
+    height:48px;
     background-color: #a27446;
+    cursor: pointer;
 }
 
 #redSocial >.instagram {
-    padding-top:5px ;
-    width:70px;
-    height: 70px;
+    width:50px;
+    height: 50px;
+    cursor: pointer;
 }
 
 .main__cta {
     flex:41%;
     overflow: hidden;
+    height: auto;
 }
 
 .red {
-    padding-top: 80px;
-    margin-left: 60%;
     width:40%;
+    height: 24%;
+    margin-left: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#red {
-    margin-left:10px ;
+
+.red img {
+    width: 100%;
+    max-width: 70px;
+    max-height: 70px;
 }
 
-.red svg:hover {
-    opacity: 0.9;
+#redFacebook {
+    max-width: 60px;
+    max-height: 60px;
 }
-
 .main__text {
     width:80%;
+    height: 76%;
     margin:0 auto;
 }
 
@@ -588,32 +617,36 @@ h1 {
 }
 
 #menu {
-    width: 70%;
+    width: 100%;
     margin:0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .dessert {
     margin-top: 30px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    max-width: 600px;
+    grid-template-columns: auto 80%;
 }
 
 .dessert_svg {
-    flex:20%;
     text-align: center;
 }
 
 .dessert_svg svg {
-    width: 80px;
-    height: 80px;
+   width: 100%;
+   max-width: 60px;
     fill:#fff;
 }
 
 .dessert_text {
-    flex:80%;
+    align-self: flex-start;
 }
 
 .dessert_text p {
@@ -648,10 +681,16 @@ h1 {
     to {opacity: 1}
   }
   
+  .dowloandDesert {
+      padding-top: 20px;
+      width: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+  }
  
-.sixth__contain button {
-    margin-top:60px ;
-    margin-left:30% ;
+.dowloandDesert button {
     color:#8d3d5b;
     font-size: 2em;
     padding:17px 35px 17px 35px;
@@ -678,6 +717,8 @@ h1 {
 
 .img__menu img {
     width:100%;
+    height: 100%;
+    max-height: 528px;
 }
 
 
@@ -697,11 +738,15 @@ h1 {
 
 .contact__img {
     margin:0 auto;
-    width:700px;
-}
-
-.contact img {
-    width:100%;
+    width:80%;
+    max-width: 700px;
+    max-height: 758px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/ck.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .formulary {
@@ -712,16 +757,13 @@ h1 {
 
 .info h2 {
     text-align: center;
-    font-size: 6em;
-    margin-top: -660px;
+    font-size: 5.8em;
     color:white;
 }
 
 .infoTwo {
     width:80%;
-    position: relative;
-    top:50px;
-    left:70px;
+    margin: 0 auto;
 }
 
 #infoTwo {
@@ -735,6 +777,7 @@ h1 {
     margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .info_foodSvg {
@@ -743,8 +786,8 @@ h1 {
 }
 
 .info_foodSvg svg {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     fill:#fff;
 }
 
@@ -765,7 +808,7 @@ h1 {
 
 .formulary h2 {
     padding-top: 160px;
-    font-size: 6.3em;
+    font-size: 6em;
     font-weight: bolder;
     text-align: center;
     color:#8d3d5b;
@@ -773,14 +816,14 @@ h1 {
 }
 
 .formm {
-    width:80%;
+    width:70%;
     margin:0 auto;
 }
 
 
 label {
     color:#a27446;
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: bolder;
 }
 
@@ -792,6 +835,7 @@ input[type=text] {
     padding:10px;
     margin-bottom:50px;
     border:none;
+    outline: none;
     border-bottom: 5px solid #8d3d5b;
 }
 
@@ -801,22 +845,23 @@ input[type=submit] {
     font-weight: bolder;
     background-color: white;
     color: #8d3d5b;
-    font-size:1.8em ;
+    font-size:1.6em ;
     padding:15px 45px 15px 45px;
     border: 4px solid #a27446; 
     text-align: center;
 }
 
 input[type=submit]:hover {
-    color:#a27446;
+    border:5px solid #a27446;
 }
 
 textarea {
     background-color: transparent;
     resize: none;
     width:95%;
-    height:250px;
+    height:180px;
     border:none;
+    outline: none;
     border-bottom: 5px solid #8d3d5b;
     margin-bottom:40px;
 }
@@ -825,6 +870,7 @@ textarea {
 
 footer {
     margin-top: 150px;
+    padding-top: 20px;
     background-color: #8d3d5b;
     width:100%;
     display:flex;
@@ -839,10 +885,12 @@ footer {
 .lg {
     width:70%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .lg img {
     width:100%;
+    max-width: 90px;
 }
 
 .siteLink {
@@ -876,11 +924,21 @@ footer {
 
 .social {
     flex:25%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 #social {
-    margin-top:260px ;
-   margin-left: 50%;
+    width: 50%;
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+#social img {
+    width: 100%;
+    max-width: 50px;
 }
 
 .copy {
@@ -892,9 +950,7 @@ footer {
 }
 
 @media only screen and (min-width: 1600px) and (max-width:1639px) {
-   .navFirst {
-       top:-700px;
-   }
+
 
    .main__img {
        height: 810px;
@@ -931,9 +987,6 @@ footer {
 }
 
 @media only screen and (min-width: 1500px) and (max-width:1599px) {
-    .navFirst {
-        top:-660px;
-    }
  
     .main__img {
         height: 750px;
@@ -986,10 +1039,6 @@ footer {
     }
 
     /*---sixth contain----*/
-    #menu {
-        width: 80%;
-    }
-
     .dessert_text p {
         width: 100%;
     }
@@ -1001,9 +1050,6 @@ footer {
         display: none;
     }
 
-    .sixth__contain button {
-        margin-left: 24%;
-    }
 
     /*formulary ---*/
 
@@ -1014,14 +1060,7 @@ footer {
 }
 
 @media only screen and (min-width: 1400px) and (max-width:1499px) {
-    .red {
-        padding-top: 40px;
-    }
 
-    .navFirst {
-        top:-630px;
-    }
- 
     .main__img {
         height: 750px;
     }
@@ -1071,11 +1110,10 @@ footer {
     .chef p {
         font-size: 1.9em;
     }
-
-    /*---sixth contain----*/
-    #menu {
+    .contact__img {
         width: 90%;
     }
+    /*---sixth contain----*/
 
     .dessert_text p {
         width: 100%;
@@ -1086,10 +1124,6 @@ footer {
         width: 94%;
         margin:0 auto;
         display: none;
-    }
-
-    .sixth__contain button {
-        margin-left: 24%;
     }
 
     /*formulary ---*/
@@ -1106,12 +1140,12 @@ footer {
         font-size: 1.6em;
     }
 
-    .red {
-        padding-top: 40px;
+    .navFirst {
+        top:12%;
     }
 
-    .navFirst {
-        top:-590px;
+    .red {
+        padding-top: 40px;
     }
 
     .main__text {
@@ -1170,9 +1204,6 @@ footer {
     }
 
     /*---sixth contain----*/
-    #menu {
-        width: 96%;
-    }
 
     .dessert_text p {
         width: 100%;
@@ -1185,9 +1216,10 @@ footer {
         display: none;
     }
 
-    .sixth__contain button {
-        margin-left: 24%;
+    .contact__img {
+        width: 90%;
     }
+
 
     /*formulary ---*/
 
@@ -1203,18 +1235,18 @@ footer {
         font-size: 1.4em;
     }
 
-    .red {
-        width: 60%;
-        margin-left: 50%;
-        padding-top: 40px;
+    .navFirst {
+        top:12%;
     }
 
-    .navFirst {
-        top:-530px;
+    .red {
+        height: 30%;
     }
+
 
     .main__text {
         width: 90%;
+        height: 70%;
     }
  
     .main__img {
@@ -1289,10 +1321,6 @@ footer {
         font-size: 5em;
     }
 
-    #menu {
-        width: 96%;
-    }
-
     .dessert_text p {
         width: 100%;
         font-size: 1.6em;
@@ -1306,9 +1334,7 @@ footer {
     }
 
     .sixth__contain button {
-        margin-left: 20%;
-        margin-top: 40px;
-        font-size: 1.7em;
+        font-size: 1.6em;
     }
 
     /*formulary ---*/
@@ -1316,6 +1342,9 @@ footer {
     input[type=submit] {
         width: 40%;
         margin-left: 30%;
+    }
+    .contact__img {
+        width: 90%;
     }
 }
 
@@ -1340,18 +1369,18 @@ footer {
         font-size: 1.4em;
     }
 
-    .red {
-        width: 60%;
-        margin-left: 50%;
-        padding-top: 40px;
+    .navFirst {
+        top: 13%;
     }
 
-    .navFirst {
-        top:-500px;
+    .red {
+        height: 30%;
     }
+
 
     .main__text {
         width: 90%;
+        height: 70%;
     }
  
     .main__img {
@@ -1428,10 +1457,6 @@ footer {
         font-size: 5em;
     }
 
-    #menu {
-        width: 96%;
-    }
-
     .dessert_text p {
         width: 100%;
         font-size: 1.6em;
@@ -1445,9 +1470,11 @@ footer {
     }
 
     .sixth__contain button {
-        margin-left: 20%;
-        margin-top: 40px;
-        font-size: 1.7em;
+        font-size: 1.6em;
+    }
+
+    .contact__img {
+        width: 90%;
     }
 
     /*---seventh contain ---*/
@@ -1488,23 +1515,22 @@ footer {
         font-size: 1.4em;
     }
 
+    .navFirst {
+        top: 14%;
+    }
+
     .imglogo {
         padding-top: 20px;
         width: 80%;
     }
 
     .red {
-        width: 60%;
-        margin-left: 46%;
-        padding-top: 10px;
-    }
-
-    .navFirst {
-        top:-450px;
+        height: 30%;
     }
 
     .main__text {
         width: 90%;
+        height: 70%;
     }
  
     .main__img {
@@ -1585,10 +1611,6 @@ footer {
         font-size: 5em;
     }
 
-    #menu {
-        width: 96%;
-    }
-
     .dessert_text p {
         width: 100%;
         font-size: 1.6em;
@@ -1602,8 +1624,6 @@ footer {
     }
 
     .sixth__contain button {
-        margin-left: 20%;
-        margin-top: 40px;
         font-size: 1.4em;
     }
 
@@ -1622,6 +1642,9 @@ footer {
         width: 40%;
         margin-left: 30%;
     }
+    .contact__img {
+        width: 90%;
+    }
 
     /*footer*/
 
@@ -1635,6 +1658,7 @@ footer {
         padding-bottom: 11px;
         font-size: 1.3em;
     }
+
 }
 
 @media only screen and (min-width: 900px) and (max-width:999px) {
@@ -1662,23 +1686,22 @@ footer {
         font-size: 1.2em;
     }
 
+    .navFirst {
+        top: 14%;
+    }
+
     .imglogo {
         padding-top: 20px;
         width: 80%;
     }
 
     .red {
-        width: 60%;
-        margin-left: 40%;
-        padding-top: 10px;
-    }
-
-    .navFirst {
-        top:-400px;
+        height: 30%;
     }
 
     .main__text {
         width: 92%;
+        height: 70%;
     }
  
     .main__img {
@@ -1760,10 +1783,6 @@ footer {
         padding-bottom: 0px;
     }
 
-    #menu {
-        width: 96%;
-    }
-
     .dessert_text p {
         width: 100%;
         font-size: 1.2em;
@@ -1777,8 +1796,6 @@ footer {
     }
 
     .sixth__contain button {
-        margin-left: 18%;
-        margin-top: 40px;
         font-size: 1.2em;
     }
 
@@ -1787,8 +1804,15 @@ footer {
          flex: 100%;
      }
 
+     .contact__img {
+         height: 100%;
+         width: 70%;
+         padding-top: 180px;
+         padding-bottom: 180px;
+         background-size: cover;
+     }
+
      .formulary {
-         padding-top: 100px;
          flex: 100%;
      }
 
@@ -1801,6 +1825,7 @@ footer {
     }
 
     .formulary h2 {
+        padding-top: 60px;
         font-size: 4em;
     }
 
@@ -1833,6 +1858,7 @@ footer {
     }
 
     #navBar nav {
+        width: 45%;
         align-items: center;
     }
 
@@ -1848,23 +1874,22 @@ footer {
         font-size: 1.2em;
     }
 
+    .navFirst {
+        top:14%;
+    }
+
     .imglogo {
         padding-top: 20px;
         width: 80%;
     }
 
     .red {
-        width: 80%;
-        margin-left: 30%;
-        padding-top: 10px;
-    }
-
-    .navFirst {
-        top:-360px;
+        height: 30%;
     }
 
     .main__text {
         width: 92%;
+        height: 70%;
     }
  
     .main__img {
@@ -1946,10 +1971,6 @@ footer {
         padding-bottom: 0px;
     }
 
-    #menu {
-        width: 100%;
-    }
-
     .dessert_text p {
         width: 100%;
         font-size: 1em;
@@ -1963,14 +1984,18 @@ footer {
     }
 
     .sixth__contain button {
-        margin-left: 16%;
-        margin-top: 40px;
         font-size: 1em;
     }
 
     /*---seventh contain ---*/
      .contact {
          flex: 100%;
+     }
+
+     .contact__img {
+        height: 100%;
+        padding-top: 180px;
+        padding-bottom: 180px;
      }
 
      .formulary {
@@ -1987,6 +2012,7 @@ footer {
     }
 
     .formulary h2 {
+        padding-top: 40px;
         font-size: 4em;
     }
 
@@ -2008,15 +2034,6 @@ footer {
         font-size: 1.3em;
     }
 
-    #social {
-        width: 30%;
-        margin-top: 80%px;
-        margin-left: 34%;
-    }
-
-    #social img {
-        width: 100%;
-    }
 }
 
 @media only screen and (min-width: 700px) and (max-width:799px) {
@@ -2028,11 +2045,6 @@ footer {
         display: block;
     }
 
-    .container {
-        top:-160px;
-        right: -300px;
-    }
-
     #navBar a {
         font-size:1.2em;
     }
@@ -2040,6 +2052,8 @@ footer {
     .logo {
         flex:100%;
         height: 150px;
+        position: relative;
+        z-index: 100;
     }
 
     .imglogo {
@@ -2220,21 +2234,8 @@ footer {
         padding-top: 0px;
     }
 
-    #menu {
-        width: 80%;
-    }
-
-    .dessert_svg {
-        flex: 30%;
-    }
-
-    .dessert_text {
-        flex: 70%;
-    }
-
     .dessert_text p {
-        width: 100%;
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     .img__menu {
@@ -2250,8 +2251,6 @@ footer {
     }
 
     .sixth__contain button {
-        margin-left: 32%;
-        margin-top: 40px;
         font-size: 1.2em;
     }
 
@@ -2261,9 +2260,10 @@ footer {
      }
 
      .contact__img {
-         width: 90%;
+        height: 100%;
+        padding-top: 160px;
+        padding-bottom: 160px;
      }
-
      .formulary {
          padding-top: 100px;
          flex: 100%;
@@ -2279,6 +2279,7 @@ footer {
 
     .formulary h2 {
         font-size: 4em;
+        padding-top: 40px;
     }
 
     input[type=submit] {
@@ -2323,19 +2324,10 @@ footer {
 
     .social {
         flex: 100%;
+        justify-content: center;
     }
 
-    #social {
-        width: 10%;
-        margin: 0 auto;
-        margin-top: 0;
-        margin-left: 46%;
-        padding-bottom: 30px;
-    }
 
-    #social img {
-        width: 100%;
-    }
 }
 
 @media only screen and (min-width: 600px) and (max-width:699px) {
@@ -2347,11 +2339,6 @@ footer {
         display: block;
     }
 
-    .container {
-        top:-160px;
-        right: -230px;
-    }
-
     #navBar a {
         font-size:1.2em;
     }
@@ -2539,10 +2526,6 @@ footer {
         padding-top: 0px;
     }
 
-    #menu {
-        width: 80%;
-    }
-
     .dessert_svg {
         flex: 30%;
     }
@@ -2569,8 +2552,6 @@ footer {
     }
 
     .sixth__contain button {
-        margin-left: 28%;
-        margin-top: 40px;
         font-size: 1.2em;
     }
 
@@ -2580,7 +2561,10 @@ footer {
      }
 
      .contact__img {
-         width: 90%;
+        height: 100%;
+        width: 90%;
+        padding-top: 180px;
+        padding-bottom: 180px;
      }
 
      .formulary {
@@ -2588,14 +2572,8 @@ footer {
          flex: 100%;
      }
 
-     .infoTwo {
-         top:20px;
-         left: 80px;
-     }
-
     .info h2 {
         font-size: 3.6em;
-        margin-top: -560px;
     }
 
     .infoTwo p {
@@ -2603,6 +2581,7 @@ footer {
     }
 
     .formulary h2 {
+        padding-top: 0px;
         font-size: 3.6em;
     }
 
@@ -2648,19 +2627,10 @@ footer {
 
     .social {
         flex: 100%;
+        justify-content: center;
+        padding-bottom: 10px;
     }
 
-    #social {
-        width: 10%;
-        margin: 0 auto;
-        margin-top: 0;
-        margin-left: 46%;
-        padding-bottom: 30px;
-    }
-
-    #social img {
-        width: 100%;
-    }
 }
 
 @media only screen and (min-width: 500px) and (max-width:599px) {
@@ -2675,11 +2645,7 @@ footer {
 
     .device {
         display: block;
-    }
-
-    .container {
-        top:-130px;
-        right: -140px;
+        height: 200%;
     }
 
     #navBar a {
@@ -2869,10 +2835,6 @@ footer {
         padding-top: 0px;
     }
 
-    #menu {
-        width: 80%;
-    }
-
     .dessert_svg {
         flex: 30%;
     }
@@ -2899,8 +2861,6 @@ footer {
     }
 
     .sixth__contain button {
-        margin-left: 24%;
-        margin-top: 40px;
         font-size: 1.2em;
     }
 
@@ -2911,28 +2871,23 @@ footer {
 
      .contact__img {
          width: 90%;
+        height: 100%;
+        padding-top: 180px;
+        padding-bottom: 180px;
      }
 
      .formulary {
-         padding-top: 30px;
+         padding-top: 40px;
          flex: 100%;
      }
 
-     .infoTwo {
-         width: 90%;
-         top:10px;
-         left: 60px;
-     }
-
      .info h2 {
-         margin-top: -490px;
          font-size:3.6em ;
      }
 
-
-
     .formulary h2 {
         font-size: 3.6em;
+        padding-top: 0;
     }
 
     input[type=submit] {
@@ -2977,18 +2932,8 @@ footer {
 
     .social {
         flex: 100%;
-    }
-
-    #social {
-        width: 10%;
-        margin: 0 auto;
-        margin-top: 0;
-        margin-left: 46%;
-        padding-bottom: 30px;
-    }
-
-    #social img {
-        width: 100%;
+        justify-content: center;
+        padding-bottom: 10px;
     }
 }
 
@@ -3001,14 +2946,18 @@ footer {
     #navbar {
         display: none;
     }
-
     .device {
         display: block;
+        height: 200%;
+        top:-14%;
     }
 
-    .container {
-        top:-130px;
-        right: -60px;
+    .main-nav ul {
+        width: 70%; 
+    }
+
+    .main-nav a {
+        font-size: 1.4em;
     }
 
     #navBar a {
@@ -3203,18 +3152,6 @@ footer {
         padding-top: 0px;
     }
 
-    #menu {
-        width: 90%;
-    }
-
-    .dessert_svg {
-        flex: 30%;
-    }
-
-    .dessert_text {
-        flex: 70%;
-    }
-
     .dessert_text p {
         width: 100%;
         font-size: 1em;
@@ -3233,30 +3170,28 @@ footer {
     }
 
     .sixth__contain button {
-        margin-left: 16%;
-        margin-top: 40px;
         font-size: 1.2em;
     }
 
     /*---seventh contain ---*/
+    .seventh__contain {
+        padding-top: 100px;
+    }
      .contact {
          flex: 100%;
      }
 
      .contact__img {
-         width: 90%;
-     }
+        width: 90%;
+       height: 100%;
+       padding-top: 180px;
+       padding-bottom: 180px;
+    }
 
      .formulary {
-         padding-top: 30px;
+         padding-top: 40px;
          flex: 100%;
      }
-
-     .infoTwo {
-        width: 90%;
-        top:0px;
-        left: 60px;
-    }
 
     .info_foodSvg svg {
         width: 40px;
@@ -3269,11 +3204,11 @@ footer {
     }
 
     .info h2 {
-        margin-top: -400px;
         font-size:3.6em ;
     }
 
     .formulary h2 {
+        padding-top: 0;
         font-size: 3.6em;
     }
 
@@ -3323,19 +3258,10 @@ footer {
 
     .social {
         flex: 100%;
+        justify-content: center;
+        padding-bottom: 10px;
     }
 
-    #social {
-        width: 10%;
-        margin: 0 auto;
-        margin-top: 0;
-        margin-left: 46%;
-        padding-bottom: 30px;
-    }
-
-    #social img {
-        width: 100%;
-    }
 }
 
 @media only screen and  (max-width:399px) {
@@ -3350,12 +3276,17 @@ footer {
     }
 
     .device {
+        height: 220%;
+        top:-20px;
         display: block;
     }
 
-    .container {
-        top:-130px;
-        right: 30px;
+    .main-nav ul {
+        width: 70%; 
+    }
+
+    .main-nav a {
+        font-size: 1.4em;
     }
 
     #navBar a {
@@ -3550,26 +3481,13 @@ footer {
         padding-top: 0px;
     }
 
-    #menu {
-        width: 90%;
-    }
-
-    .dessert_svg {
-        flex: 30%;
-    }
-
-    .dessert_svg svg {
-        width: 70px;
-        height: 70px;
-    }
-
     .dessert_text {
-        flex: 70%;
+        width: 100%;
+        text-align: start;
     }
 
     .dessert_text p {
-        width: 100%;
-        font-size: 0.8em;
+        font-size: 1em;
     }
 
     .img__menu {
@@ -3585,30 +3503,30 @@ footer {
     }
 
     .sixth__contain button {
-        margin-left: 8%;
-        margin-top: 40px;
         font-size: 1em;
     }
 
     /*---seventh contain ---*/
+    .seventh__contain {
+        padding-top: 100px;
+    }
+
      .contact {
          flex: 100%;
      }
 
-     .contact__img {
-         width: 100%;
+    .contact__img {
+         width: 90%;
+        height: 100%;
+        padding-top: 160px;
+        padding-bottom: 160px;
      }
 
      .formulary {
-         padding-top: 30px;
+         padding-top: 40px;
          flex: 100%;
      }
 
-     .infoTwo {
-        width: 90%;
-        top:30px;
-        left: 30px;
-    }
 
     .info_foodSvg svg {
         width: 40px;
@@ -3621,11 +3539,11 @@ footer {
     }
 
     .info h2 {
-        margin-top: -400px;
         font-size:3em ;
     }
 
     .formulary h2 {
+        padding-top: 0;
         font-size: 3em;
     }
 
@@ -3634,8 +3552,9 @@ footer {
     }
 
     input[type=submit] {
-        width: 80%;
-        margin-left: 10%;
+        width: 60%;
+        margin-left: 20%;
+        font-size: 1.1em;
     }
 
     /*footer*/
@@ -3675,18 +3594,8 @@ footer {
 
     .social {
         flex: 100%;
-    }
-
-    #social {
-        width: 10%;
-        margin: 0 auto;
-        margin-top: 0;
-        margin-left: 46%;
-        padding-bottom: 30px;
-    }
-
-    #social img {
-        width: 100%;
+        justify-content: center;
+        padding-bottom: 10px;
     }
 }
 
